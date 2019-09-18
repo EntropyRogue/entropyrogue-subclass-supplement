@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Hellsworn</name>
+		<description>The Hellsworn from EntropyRogue's Subclasses Supplement</description>
+		<author url="https://homebrewery.naturalcrit.com/share/rJbyfGPV1H">EntropyRogue's Subclass Supplement</author>
+		<update version="0.0.1">
+			<file name="fighter-hellsworn.xml" url="????" />
+		</update>
+	</info>
+
+	<element name="Hellsworn" type="Archetype" source="EntropyRogue's Subclass Supplement" id="ID_ENTROPYROGUE_ESS_ARCHETYPE_FIGHTER_HELLSWORN">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>Not all fighters gain their abilities through training alone-- the Hellsworn are wielders of a powerful item-- a weapon created by a greater devil of the Nine Hells. While this tool gives the user infernal powers, it also grants its fiendish creator the ability to psychically communicate with the user and see through their eyes.</p>
+			<p>Hellsworn are not necessarily evil; many will view the devil's presense as a nuisance, but are unable to rid themselves of the cursed item. Others, however, may embrace the devil, and willingly perform their bidding.</p>
+			<div element="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_FIENDISH_WEAPON" />
+			<div element="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_INNER_FIRE" />
+			<div element="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_BURNING_STRIKE" />
+			<div element="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_WEAPON_CONSUMPTION" />
+			<div element="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_SACRIFICIAL_MAGIC" />
+			<div element="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_INFERNAL_EXPOSURE" />
+			<div element="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_HELLPLATE" />
+			<div element="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_ASHEN_FLESH" />
+			<div element="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_CURSED_FLAMES" />
+			<div element="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_HELLISH_VIGOR" />
+		</description>
+		<sheet display="false">
+			<description>The Hellsworn are wielders of a powerful weapon created by a greater devil of the Nine Hells.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_" level="3" />
+			<grant type="Archetype Feature" id="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_FIENDISH_WEAPON" level="3" />
+			<grant type="Archetype Feature" id="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_INNER_FIRE" level="3" />
+			<grant type="Archetype Feature" id="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_BURNING_STRIKE" level="3" />
+			<grant type="Archetype Feature" id="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_WEAPON_CONSUMPTION" level="7" />
+			<grant type="Archetype Feature" id="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_SACRIFICIAL_MAGIC" level="7" />
+			<grant type="Archetype Feature" id="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_INFERNAL EXPOSURE" level="7" />
+			<grant type="Archetype Feature" id="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_HELLPLATE" level="10" />
+			<grant type="Archetype Feature" id="ID_ER_ESS_ARCHETYPE_FEATURE_ASHEN_FLESH" level="15" />
+			<grant type="Archetype Feature" id="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_CURSED_FLAMES" level="15" />
+			<grant type="Archetype Feature" id="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_HELLISH_VIGOR" level="18" />
+		</rules>
+	</element>
+	<element name="Fiendish Weapon" type="Archetype Feature" source="EntropyRogue's Subclass Supplement" id="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_FIENDISH_WEAPON">
+		<description>
+			<p>Starting when you choose this archetype at 3rd level, you gain a cursed magical weapon smithed by a greater devil. It can take the form of any 2-handed melee weapon in the Player's Handbook, and acts as a +1 weapon of that type. It is always attuned to you, but does not require an attunement slot.</p>
+			<p class= "indent">While the fiendish weapon is on your person, its creator-- a greater devil-- can psychically communicate with you, and is able to experience any senses you do. Nobody other than you can hear the devil, or what you say to them.</p>
+			<p class= "indent">If your fiendish weapon travels farther than 5 feet away from you, it will dissipate and immediately reconstitute on your person.</p>
+			<p class= "indent">The magic bonus of your Fiendish Weapon increases to +2 at level 10, and +3 at level 18.</p>
+		</description>
+		<sheet>
+			<description level="3">+1 magic melee weapon, 2-handed.</description>
+			<description level="10">+2 magic melee weapon, 2-handed.</description>
+			<description level="18">+3 magic melee weapon, 2-handed.</description>
+		</sheet>
+	</element>
+	<element name="Inner Fire" type="Archetype Feature" source="EntropyRogue's Subclass Supplement" id="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_INNER_FIRE">
+		<description>
+			<p>At 3rd level, the flames from the Nine Hells burn within you. While you are wielding your fiendish weapon, you can cast the <i>Produce Flame</i> and <i>Control Flames</i> Cantrips using your charisma as your spellcasting ability modifier.</p>
+		</description>
+		<sheet>
+			<description>You can cast <i>Produce Flame</i> and <i>Control Flames</i> using charisma.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_PRODUCE_FLAME" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTROL FLAMES" />
+		</rules>
+	</element>
+	<element name="Burning Strike" type="Archetype Feature" source="EntropyRogue's Subclass Supplement" id="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_BURNING_STRIKE">
+		<description>
+			<p>At 3rd level, once per short rest, you can spend a bonus action to infuse your fiendish weapon with fire, causing your next melee attack with it to deal an additional 1d6 fire damage.</p>
+			<p class="indent">You gain an additional use per short rest at 7th level, and again at 10th, 15th, and 18th.</p>
+		</description>
+		<sheet>
+			<description usage="1/Short Rest" level= "3">You can use a bonus action to make your next fiendish weapon attack deal an additional 1d6 fire damage.</description>
+			<description usage="2/Short Rest" level= "7">You can use a bonus action to make your next fiendish weapon attack deal an additional 1d6 fire damage.</description>
+			<description usage="3/Short Rest" level= "10">You can use a bonus action to make your next fiendish weapon attack deal an additional 1d6 fire damage.</description>
+			<description usage="4/Short Rest" level= "15">You can use a bonus action to make your next fiendish weapon attack deal an additional 1d6 fire damage.</description>
+			<description usage="1/Short Rest" level= "18">You can use a bonus action to make your next fiendish weapon attack deal an additional 1d6 fire damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Weapon Consumption" type="Archetype Feature" source="EntropyRogue's Subclass Supplement" id="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_WEAPON_CONSUMPTION">
+		<description>
+			<p>At 7th level, your fiendish weapon hungers for power from other weapons. During a long rest, you can use your fiendish weapon, another magic weapon, and 50 gold in incense, to perform a ritual-- during which the magic item and incense are consumed in a bright flame, and your fiendish weapon gains the consumed weapon's power.</p>
+<p class= "indent">After you perform this ritual, your fiendish weapon has the same damage, magic effects, and attunement requirements as the consumed item, but retains its form, as well as the 2-handed property.</p>
+<p class= "indent">Performing this ritual again causes your fiendish weapon to replace the damage, magic effects, and attunement requirements of the previous item in exchange for the new one.</p>
+<p class= "indent">Additionally, performing this ritual without a magical weapon reverts your fiendish weapon to its original state.</p>
+		</description>
+		<sheet display="false">
+			<description>
+				During a long rest, you may perform a ritual where your fiendish weapon consumes another magic weapon, and gains its abilities.
+			</description>
+		</sheet>
+	</element>
+	<element name="Sacrificial Magic" type="Archetype Feature" source="EntropyRogue's Subclass Supplement" id="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_SACRIFICIAL_MAGIC">
+		<description>
+			<p>At 7th level, you gain the ability to draw magical energy from your own life force. You learn 2 sacrificial incantations of your choice, listed below. your spellcasting ability modifier for your sacrificial incantations is Charisma, and your spell save DC is calculated as follows:</p>
+			<p><b>Sacrificial Magic DC</b> = 8 + your proficiency bonus + your Charisma modifier</p>
+			<p class= "indent">The psychic damage taken from a sacrificial incantation ignores any resistances or immunities you may have, and casting them requires you to be wielding your fiendish weapon.</p>
+			<p class= "indent">You learn 1 additional incantation at levels 10, 15, and 18.</p>
+		</description>
+		<sheet display= "false">
+			<description>
+				You can cast sacrificial incantations using your life force.
+			</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Sacrificial Incantation (level 7)" supports="Sacrificial Magic,Hellsworn" number="2" level="7" />
+			<select type="Archetype Feature" name="Sacrificial Incantation (level 10)" supports="Sacrificial Magic,Hellsworn" number="1" level="10" />
+			<select type="Archetype Feature" name="Sacrificial Incantation (level 15)" supports="Sacrificial Magic,Hellsworn" number="1" level="15" />
+			<select type="Archetype Feature" name="Sacrificial Incantation (level 18)" supports="Sacrificial Magic,Hellsworn" number="1" level="18" />
+
+			<stat name="sacrificial magic:dc" value="8" />
+			<stat name="sacrificial magic:dc" value="proficiency" />
+			<stat name="sacrificial magic:dc" value="strength:modifier" />
+		</rules>
+	</element>
+
+	<element name="Infernal Exposure" type="Archetype Feature" source="EntropyRogue's Subclass Supplement" id="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_INFERNAL_EXPOSURE">
+		<description>
+			<p>At 7th level, your continued use of fire from the Nine Hells has inoculated your body against heat. You gain resistance to fire damage.</p>
+		</description>
+		<sheet>
+			<description>You have resistance to fire damage.</description>
+		</sheet>
+	</element>
+	<element name="Hellplate" type="Archetype Feature" source="EntropyRogue's Subclass Supplement" id="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_HELLPLATE">
+		<description>
+			<p>At 10th level, you gain the ability to summon fiendish armor over your body. This armor, known as Hellplate, can be summoned onto your body by channeling for 10 minutes, during which the armor will slowly materialize on you. To remove this armor, you can channel for 5 minutes, and it will slowly dissipate. Hellplate counts as Heavy Armor, but has no weight. While wearing this, you have disadvantage on stealth checks, but your Armor Class raises to 20.</p>
+<p class= "indent">Additionally, if an enemy within 5 feet of you makes a melee attack roll against you while you are wearing your Hellplate, your armor will flare up, dealing 1d4 fire damage to the attacker.</p>
+		</description>
+		<sheet>
+			<description>While Hellplate is on, AC is 20, and when an enemy makes a melee attack against you, they take 1d4 fire damage.</description>
+		</sheet>
+		<rules>
+			<stat name= "ac:hellplate" value= "20" />
+		</rules>
+	</element>
+	<element name="Ashen Flesh" type="Archetype Feature" source="EntropyRogue's Subclass Supplement" id="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_HELLPLATE">
+		<description>
+			<p>At 15th level, your continued exposure to fiendish power has altered your body. Your skin has gained a red tint, and is hot to the touch. You are immune to fire damage.</p>
+		</description>
+		<sheet>
+			<description>Immunity to fire damage.</description>
+		</sheet>
+	</element>
+	<element name="Cursed Flames" type="Archetype Feature" source="EntropyRogue's Subclass Supplement" id="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_HELLPLATE">
+		<description>
+			<p>At 15th level, you can more effectively harness the fires of the Nine Hells. Fire damage caused by abilities from the Hellsworn archetype ignore resistance and immunity on all creatures besides you.</p>
+		</description>
+		<sheet><description>Hellsworn abilities ignore fire resistance and immunity, except for yours.</description></sheet>
+	</element>
+	<element name="Hellish Vigor" type="Archetype Feature" source="EntropyRogue's Subclass Supplement" id="ID_ER_ESS_ARCHETYPE_FEATURE_HELLSWORN_HELLISH_VIGOR">
+		<description>
+			<p>At 18th level, you are always conscious. You cannot sleep, and can get the full effect of a long rest while doing light activity such as standing guard. Magic cannot put you to sleep.</p>
+<p class="indent">When you drop to 0 HP, you remain conscious. You still make death saves each turn, but the DC is reduced to 8, taking damage does not affect them, and you can still act after the save as if you were above 0 HP. Stabilization returns you to 1 HP, and healing effects still recover health as normal. If you take enough damage while below 0 HP to equal or exceed your maximum HP, you die.</p>
+		</description>
+	</element>
+	<!--Sacrificial Incantations-->
+	<element name="Demand Obedience" type="Archetype Feature" source="EntropyRogue's Subclass Supplement" id="ID_ER_ESS_ARCHETYPE_FEATURE_SACRIFICIAL_MAGIC_DEMAND_OBEDIENCE">
+		<supports>Sacrificial Magic, Hellsworn</supports>
+		<description>
+			As a bonus action, you can cast <i>Command</i> as a first level spell, and take 6 psychic damage. The command you give must be <b>grovel</b>.
+		</description>
+		<sheet action="Bonus Action">
+			<description>Take 6 psychic damage and cast a 1st level <i>Command</i>, with the command <b>grovel</b>.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_COMMAND" />
+		</rules>
+	</element>
+
+	<element name="Devilish Enmity" type="Archetype Feature" source="EntropyRogue's Subclass Supplement" id="ID_ER_ESS_ARCHETYPE_FEATURE_SACRIFICIAL_MAGIC_DEVILISH_ENMITY">
+		<supports>Sacrificial Magic, Hellsworn</supports>
+		<description>
+			When you take damage from an enemy within 60 feet of you that you can see, you can use your reaction and take an additional 6 psychic damage to cast <i>Hellish Rebuke</i> at first level.
+		</description>
+		<sheet action="Reaction">
+			<description>When damaged by an enemy within 60 feet, you can take 6 psychic damage to cast a 1st level <i>Hellish Rebuke</i>.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_HELLISH_REBUKE" />
+		</rules>
+	</element>
+
+	<element name="Evil Presense" type="Archetype Feature" source="EntropyRogue's Subclass Supplement" id="ID_ER_ESS_ARCHETYPE_FEATURE_SACRIFICIAL_MAGIC_EVIL_PRESENSE">
+		<supports>Sacrificial Magic, Hellsworn</supports>
+		<description>
+			As an action, you can take 10 psychic damage and make every creature in a 10 foot radius of you make a wisdom saving throw. Each creature that fails the save is frightened of you until the end of their next turn. Once you use this incantation, it can't be used again until you complete a short rest.
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>Take 10 psychic damage and make every creature within 10 feet make a wisdom save, becoming frightened on a failure.</description>
+		</sheet>
+	</element>
+
+	<element name="Fiendish Ire" type="Archetype Feature" source="EntropyRogue's Subclass Supplement" id="ID_ER_ESS_ARCHETYPE_FEATURE_SACRIFICIAL_MAGIC_FIENDISH_IRE">
+		<supports>Sacrificial Magic, Hellsworn</supports>
+		<description>
+			As an action, you can cast <i>Bane</i> as a first level spell, and take 6 psychic damage.
+		</description>
+		<sheet action="Action">
+			<description>Take 6 psychic damage and cast a 1st level <i>Bane</i>.</description>
+		</sheet>
+
+		<rules>
+			<grant type="Spell" id="ID_PHB_BANE" />
+		</rules>
+	</element>
+	<element name="Fleeting Vitality" type="Archetype Feature" source="EntropyRogue's Subclass Supplement" id="ID_ER_ESS_ARCHETYPE_FEATURE_SACRIFICIAL_MAGIC_FLEETING_VITALITY">
+		<supports>Sacrificial Magic, Hellsworn</supports>
+		<description>
+			As an action, you can cast <i>False Life</i> as a first level spell. After using this incantation, it cannot be used again until you complete a long rest.
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>Cast a 1st level <i>False Life</i>.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_FALSE_LIFE" />
+		</rules>
+	</element>
+	<element name="Hellfire Barrage" type="Archetype Feature" source="EntropyRogue's Subclass Supplement" id="ID_ER_ESS_ARCHETYPE_FEATURE_SACRIFICIAL_MAGIC_HELLFIRE_BARRAGE">
+		<supports>Sacrificial Magic, Hellsworn</supports>
+		<description>
+			As an action, you can cast <i>Scorching Ray</i> as a 2nd level spell, and take 12 psychic damage.
+		</description>
+		<sheet action="Action">
+			<description>Take 12 psychic damage and cast a 2nd level <i>Scorching Ray</i>.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SCORCHING_RAY" />
+		</rules>
+	</element>
+
+	<element name="Hellfire Beam" type="Archetype Feature" source="EntropyRogue's Subclass Supplement" id="ID_ER_ESS_ARCHETYPE_FEATURE_SACRIFICIAL_MAGIC_HELLFIRE_BEAM">
+		<supports>Sacrificial Magic, Hellsworn</supports>
+		<description>
+			As an action, you can cast <i>Aganazzar's Scorcher</i> as a 2nd level spell, and take 12 damage. The flame comes out of the tip of your fiendish weapon as a molten beam.
+		</description>
+		<sheet action="Action">
+			<description>Take 12 psychic damage and cast a 2nd level <i>Aganazzar's Scorcher</i>.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_AGANAZZARS_SCORCHER" />
+		</rules>
+	</element>
+
+	<element name="Hellfire Wave" type="Archetype Feature" source="EntropyRogue's Subclass Supplement" id="ID_ER_ESS_ARCHETYPE_FEATURE_SACRIFICIAL_MAGIC_HELLFIRE_WAVE">
+		<supports>Sacrificial Magic, Hellsworn</supports>
+		<description>
+			As an action, you can cast <i>Burning Hands</i> as a 2nd level spell, and take 10 psychic damage. The cone of fire comes out of the tip of your fiendish weapon, rather than your hands.
+		</description>
+		<sheet action="Action">
+			<description>Take 10 psychic damage and cast a 2nd level <i>Burning Hands</i>.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_BURNING_HANDS" />
+		</rules>
+	</element>
+
+	<element name="Necrotic Rend" type="Archetype Feature" source="EntropyRogue's Subclass Supplement" id="ID_ER_ESS_ARCHETYPE_FEATURE_SACRIFICIAL_MAGIC_NECROTIC_REND">
+		<supports>Sacrificial Magic, Hellsworn</supports>
+		<description>
+			When you make a weapon attack with your fiendish weapon, you can choose to take 10 psychic damage and replace one of the weapon attacks with the <i>Inflict Wounds</i> spell at 1st level.
+		</description>
+		<sheet>
+			<description>Take 10 psychic damage and replace one weapon attack from your fiendish weapon with a 1st level <i>Inflict Wounds</i> spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_INFLICT_WOUNDS" />
+		</rules>
+	</element>
+
+	<element name="Wrathful Curse" type="Archetype Feature" source="EntropyRogue's Subclass Supplement" id="ID_ER_ESS_ARCHETYPE_FEATURE_SACRIFICIAL_MAGIC_WRATHFUL_CURSE">
+		<supports>Sacrificial Magic, Hellsworn</supports>
+		<description>
+			As a bonus action, you can cast <i>Hex</i> as a first level spell, and take 10 psychic damage.
+		</description>
+		<sheet action="Bonus Action">
+			<description>Take 10 psychic damage and cast a 1st level <i>Hex</i>.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_HEX" />
+		</rules>
+	</element>
+</elements>
