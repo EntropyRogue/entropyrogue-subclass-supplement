@@ -5,8 +5,9 @@
 		<description>A bunch of homebrew subclasses for 5e.</description>
 		<author url="https://github.com/EntropyRogue">EntropyRogue's Github</author>
 		<update version="0.0.1">
-			<file name="entropyrogues-subclass-supplement.index" url="https://raw.githubusercontent.com/EntropyRogue/entropyrouges-subclass-supplement/master/entropyrogues-subclass-supplement" />
+			<file name="entropyrogues-subclass-supplement.index" url="https://raw.githubusercontent.com/EntropyRogue/homebrew/master/entropyrogues-subclass-supplement.index" />
 		</update>
 	</info>
 	<files>
-		<file name="fighter-hellsworn.xml" url="https://raw.githubusercontent.com/EntropyRogue/entropyrouges-subclass-supplement/master/fighter-hellsworn.xml" />
+		<file name="fighter-hellsworn.xml" url="https://raw.githubusercontent.com/EntropyRogue/homebrew/master/entropyrogues-subclass-supplement/fighter-hellsworn" />
+	</files>
