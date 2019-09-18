@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>EntropyRogue's Subclass Supplement</name>
+		<description>A bunch of homebrew subclasses for 5e.</description>
+		<author url="https://github.com/EntropyRogue">EntropyRogue's Github</author>
+		<update version="0.0.1">
+			<file name="entropyrogues-subclass-supplement.index" url="https://raw.githubusercontent.com/EntropyRogue/entropyrouges-subclass-supplement/master/entropyrogues-subclass-supplement" />
+		</update>
+	</info>
+	<files>
+		<file name="fighter-hellsworn.xml" url="https://raw.githubusercontent.com/EntropyRogue/entropyrouges-subclass-supplement/master/fighter-hellsworn.xml" />
